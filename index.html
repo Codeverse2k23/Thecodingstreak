@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Codeverse_2k23</title>
+   <link rel = "icon" href = "cbm.png" type = "image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="parallax-world-of-ugg">
+  
+<section>
+  <div class="title">
+    <h3>Codeverse_2k23</h3>
+    <h1>The coding Streak 🔥</h1>
+  </div>
+</section>
+
+
+
+
+
+<!--
+<section>
+  <div class="parallax-three">
+    <h2>ENCHANTED FOREST</h2>
+  </div>
+</section>
+
+<section>
+  <div class="block">
+    <p style="font-size: large;font-family:Verdana, Geneva, Tahoma, sans-serif;"><span class="first-character sc">P1</span>Program to find out "FLAMES" that we used to do in our school days to find out relation between a boy and a girl.</p>
+    <p style="font-size: large;"> input :<p>Enter name 1: Ranbir</p><p>Enter name 2: Alia</p> ; output = Marriage</p>  <p class="line-break margin-top-10"></p>
+     </div>
+</section>
+
+-->
+  
+  
+  
+<section>
+  <div class="parallax-two">
+    <h2>Day 2 - FLAMES</h2>
+  </div>
+</section>
+
+<section>
+  <div class="block">
+    <p style="font-size: large;font-family:Verdana, Geneva, Tahoma, sans-serif;"><span class="first-character sc">P1</span>Program to find out "FLAMES" that we used to do in our school days to find out relation between a boy and a girl.</p>
+    <p style="font-size: large;"> input :<p>Enter name 1: Ranbir</p><p>Enter name 2: Alia</p> ; output = Marriage</p>
+   <p class="line-break margin-top-10"></p>
+    <center>	<div class="window">
+      <div class="window-header">
+        <div class="action-buttons"></div>
+        <select class="language">
+          <option value="javascript" selected>Python</option>
+          <option value="markup">HTML</option>
+          <option value="php">PHP</option>
+        </select>
+      </div>
+      <div class="window-body">
+        <textarea class="code-input" style="font-size: medium;">
+          def flames(name1,name2):
+    n1 = [x for x in name1]
+    n2 = [x for x in name2]
+    l=[]
+    f = ['Friendship','Love','Affection','Marriage','Enemy','Siblings']
+    for i in n1:
+        if i in n2:
+            n2.pop(n2.index(i))
+        else:
+            l.append(i)
+    count= len(l)+len(n2)
+    while(len(f)>1):
+        if count>len(f):
+            v = (count%len(f))-1
+        else:
+            v=count-1
+        if v==-1:
+            val = 1
+        else:
+            val=0
+        f.pop(v)
+        if val==0:
+            f = f[v:]+f[:v]
+    result = f[0]
+    return result
+name1 = input("Enter name1 : ")
+name2 = input("Enter name2 :")
+print(flames(name1,name2))
+
+      
+      
+      </textarea>
+        
+      </div>
+    </div></center> </div>
+</section>
+  
+  
+  
+
+<section>
+    <div class="parallax-one">
+      
+      <h2 style="background: -webkit-linear-gradient(#eee, #333);-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;">Day 1 - Number to word</h2>
+    </div>
+</section>
+<section>
+  <div class="block">
+    <p style="font-size: large;font-family:Verdana, Geneva, Tahoma, sans-serif;"><span class="first-character sc">P1</span>Print the given number into words.</p>
+    <p style="font-size: large;"> input = 524 ; output = five hundred twenty four</p>
+
+    <p class="line-break margin-top-10"></p>
+<br><br>
+    
+
+    <center>	<div class="window">
+      <div class="window-header">
+        <div class="action-buttons"></div>
+        <select class="language">
+          <option value="javascript" selected>Python</option>
+          <option value="markup">HTML</option>
+          <option value="php">PHP</option>
+        </select>
+      </div>
+      <div class="window-body">
+        <textarea class="code-input" style="font-size: medium;">def name(num):
+          l = [int(i) for i in num]
+          l=l[::-1]
+          result =[]
+          n = len(l)
+          while n>0:
+              n-=1
+              if n==2 and l[n]!=0:
+                  result.append(ones[l[n]-1]+' hundred')
+              elif n==1:
+                  if l[n]!=0:
+                      if l[n]==1:
+                          result.append(twos[l[n-1]])
+                          break
+                      else:
+                          result.append(tens[l[n]-2])
+                  else:
+                      if l[n-1]!=0:
+                          result.append(ones[l[n-1]-1])
+                          break
+              elif n==0 and l[n]!=0:
+                  result.append(ones[l[n]-1])
+                  break
+              
+          return ' '.join(result)
+      
+      ones = ['one','two','three','four','five','six','seven','eight','nine']
+      twos= ['Ten','eleven','Tweleve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','eighteen','nineteen']
+      tens=['twenty','thirty','fourty','fifty','sixty','seventy','eighty','ninty']
+      while (1):
+          num =input("Enter number: ")
+          print(name(num))
+      
+      
+      </textarea>
+        
+      </div>
+    </div></center>
+    
+     </div>
+</section>
+  
+</div>
+<!-- partial -->
+  
+</body>
+</html>
