@@ -19,25 +19,64 @@
 </section>
 
 
-
-
-
-<!--
 <section>
-  <div class="parallax-three">
-    <h2>ENCHANTED FOREST</h2>
+ <div class="parallax-three">
+    <h2  style="background: -webkit-linear-gradient(#eee, #333);-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;">Day 3 - Balanced Parenthesis</h2>
   </div>
 </section>
 
 <section>
   <div class="block">
-    <p style="font-size: large;font-family:Verdana, Geneva, Tahoma, sans-serif;"><span class="first-character sc">P2</span>Program to find out "FLAMES" that we used to do in our school days to find out relation between a boy and a girl.</p>
-    <p style="font-size: large;"> input :<p>Enter name 1: Ranbir</p><p>Enter name 2: Alia</p>output = Marriage</p>  <p class="line-break margin-top-10"></p>
+    <p style="font-size: large;font-family:Verdana, Geneva, Tahoma, sans-serif;"><span class="first-character sc">P3</span>Given an expression string, write a python program to find whether a given string has balanced parentheses or not.</p>
+    <p style="font-size: large;"> Input : {[]{()}}
+Output : Balanced
+
+Input : [{}{}(]
+Output : Unbalanced</p>  <p class="line-break margin-top-10"></p>
+     <center>	<div class="window">
+      <div class="window-header">
+        <div class="action-buttons"></div>
+        <select class="language">
+          <option value="javascript" selected>Python</option>
+          <option value="markup">HTML</option>
+          <option value="php">PHP</option>
+        </select>
+      </div>
+      <div class="window-body">
+        <textarea class="code-input" style="font-size: medium;">
+def paranthesis(val):
+    l1 = []
+    count=0
+    result=0
+    for i in val:
+        if i=='(' or i=='[' or i== '{':
+            count+=1
+            l1.append(i)
+        elif i==')' and '(' in l1:
+            a = l1.remove('(')
+            result+=1
+        elif i==']' and '[' in l1:
+            a = l1.remove('[')
+            result+=1
+        elif i=='}' and '{' in l1:
+            a = l1.remove('{')
+            result+=1
+    if count==result:
+        return 'Balanced'
+    else:
+        return 'Unbalanced'
+val = input()
+print(paranthesis(val))
+ 
+      </textarea>
+        
+      </div>
+    </div></center> 
      </div>
 </section>
 
--->
-  
+
   
   
 <section>
