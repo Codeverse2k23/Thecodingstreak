@@ -18,7 +18,84 @@
   </div>
 </section>
 
+  
+  
+  
+  
+  
+  
+  
+<section>
+ <div class="parallax-four">
+    <h2  style="background: -webkit-linear-gradient(#eee, #333);-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;">Day 4 - Subarray with given sum</h2>
+  </div>
+</section>
 
+<section>
+  <div class="block">
+    <p style="font-size: large;font-family:Verdana, Geneva, Tahoma, sans-serif;"><span class="first-character sc">P4</span>Given an unsorted array A of size N that contains only non-negative integers, find a continuous sub-array which adds to a given number S and return the left and right index(1-based indexing) of that subarray.
+
+In case of multiple subarrays, return the subarray indexes which comes first on moving from left to right.</p>
+    <p style="font-size: large;"> <br><p>Input:
+N = 5, S = 12, 
+A[] = {1,2,3,7,5}</p>
+
+<p>Output: 2 4
+Explanation: The sum of elements 
+from 2nd position to 4th position 
+is 12.</p></p>  <p class="line-break margin-top-10"></p><br><br>
+     <center>	<div class="window">
+      <div class="window-header">
+        <div class="action-buttons"></div>
+        <select class="language">
+          <option value="javascript" selected>Python</option>
+          <option value="markup">HTML</option>
+          <option value="php">PHP</option>
+        </select>
+      </div>
+      <div class="window-body">
+        <textarea class="code-input" style="font-size: medium;">
+def subarray_sum(s,A):
+    for i in range(len(A)):
+        sum=0
+        for j in range(i,len(A)):
+            sum+=int(A[j])
+            if sum==s:
+                return i+1,j+1  
+            elif sum>s:
+                sum=0
+                break
+    return "not possible"
+
+n = int(input("N = "))
+s = int(input("S= "))
+A = input("A[]= ").split()
+print(subarray_sum(s,A))
+        
+    
+
+ 
+      </textarea>
+        
+      </div>
+    </div></center> 
+     </div>
+</section>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 <section>
  <div class="parallax-three">
     <h2  style="background: -webkit-linear-gradient(#eee, #333);-webkit-background-clip: text;
