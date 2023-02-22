@@ -18,6 +18,57 @@
   </div>
 </section>
 
+
+  
+  
+<section>
+ <div class="parallax-six">
+    <h2  style="background: -webkit-linear-gradient(#eee, #333);-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;">Day 6 - highest and lowest ASCII value</h2>
+  </div>
+</section>
+
+<section>
+  <div class="block">
+    <p style="font-size: large;font-family:Verdana, Geneva, Tahoma, sans-serif;"><span class="first-character sc">P6</span>Program to print words from a sentence with highest and lowest ASCII value of characters
+</p>
+    <p style="font-size: large;">input: every moment is fresh beginning</p> <br>
+  <p class="line-break margin-top-10">output:<br> Word with minimum average ASCII values is “beginning”.<br>
+Word with maximum average ASCII values is “every”.</p><br><br>
+     <center>	<div class="window">
+      <div class="window-header">
+        <div class="action-buttons"></div>
+        <select class="language">
+          <option value="javascript" selected>Python</option>
+          <option value="markup">HTML</option>
+          <option value="php">PHP</option>
+        </select>
+      </div>
+      <div class="window-body">
+        <textarea class="code-input" style="font-size: medium;">
+n = input().split()
+l = []
+for i in n:
+    sum=0
+    for j in i:
+        sum+=ord(j)
+    l.append(sum/len(i))
+
+m1 = min(l)
+m2 = max(l)
+print('Word with minimum average ascii value is', n[l.index(m1)])
+print('Word with maximum average ascii value is', n[l.index(m2)])
+
+
+ 
+      </textarea>
+        
+      </div>
+    </div></center> 
+     </div>
+</section>
+  
+  
   
   
     
