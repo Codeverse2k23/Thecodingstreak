@@ -19,6 +19,71 @@
 </section>
 
 
+
+  
+ 
+  
+  
+  
+ <section>
+ <div class="parallax-seven">
+    <h2  style="background: -webkit-linear-gradient(#eee, #333);-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;">Day 7 - Sequence array rotation</h2>
+  </div>
+</section>
+
+<section>
+  <div class="block">
+    <p style="font-size: large;font-family:Verdana, Geneva, Tahoma, sans-serif;"><span class="first-character sc">P7</span>Day 7 : Program to print sequence from 1 to n and perform array rotation
+    </p>
+<p>input: 7</p>
+<p>output:</p>
+<p>1234567</p>
+<p>2345671</p>
+<p>3456712</p>
+<p>4567123</p>
+<p>5671234</p>
+<p>6712345</p>
+<p>7123456</p>
+    <p style="font-size: large;"></p>
+  <p class="line-break margin-top-10">.</p><br><br>
+     <center>	<div class="window">
+      <div class="window-header">
+        <div class="action-buttons"></div>
+        <select class="language">
+          <option value="javascript" selected>Python</option>
+          <option value="markup">HTML</option>
+          <option value="php">PHP</option>
+        </select>
+      </div>
+      <div class="window-body">
+        <textarea class="code-input" style="font-size: medium;">
+n = int(input())
+l = []
+arr = [str(i) for i in range(1,n+1)]
+v = ''.join(arr)
+for i in range(n):
+    l.append(v)
+    v = v[1:]+v[0]
+for i in l:
+    print(i)
+
+
+ 
+      </textarea>
+        
+      </div>
+    </div></center> 
+     </div>
+</section> 
+  
+  
+  
+  
+  
+  
+  
+  
   
   
 <section>
